@@ -5,13 +5,13 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Media Queries</title>
-  <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
   <main>
     <section>
       <h1>Media queries</h1>
-      <h4>Media queries create responsive designs that adapt to different devicdes and screen sizes, providing a better user experience acros the range of platfrom and devices.</h4>
+      <h4>Media queries create responsive designs that adapt to different devices and screen sizes, providing a better user experience across the range of platfrom and devices.</h4>
       <ul>
         <li>
           Media queries are a CSS feature.
@@ -28,24 +28,50 @@
         <li>
           <b>media type:</b> target type of devices; <b>all:</b> (all devices and media type). <b>screen:</b>(screen with and devices with visual output.) <b>print:</b> (applies when printing documents). <b>speech:</b> (applies to screen reader.)
         </li>
+
+        <li>
+          <b>media feature:</b> is feature of users device. 
+          <ol>
+            <li> <u>width and height</u>  </li>
+            <ul>
+              <li>
+                <i>max-width:</i> Maximum width of the viewport
+              </li>
+              <li>
+                <i>min-width:</i>
+              </li>
+              <li>
+                <i>max-height:</i>
+              </li>
+              <li>
+                <i>min-height:</i>
+              </li>
+            </ul>
+            <li>
+              <u>orientation:</u> landscape or portrait
+            </li>
+
+            <li>
+              <u>Aspect Ratio:</u> the ratio of width and height of the devices
+            </li>
+            <li>
+              <u>Resolution:</u> pixel density of the device
+            </li>
+            <li>
+              <u>device type:</u> pointer(Imouse or touchscreen) or hover (when cursor hover fo the element)
+            </li>
+            <li>
+              <i>color:</i> number of bit per color componened of the device
+            </li>
+            <li>
+              <i>grid </i>; whether the devices is able to support grid-based layouts
+            </li>
+          </ol>
+        </li>
       </ul>
-      <h4>Syntax</h4>
+      <h4>media type and media features can be combined to create a targeted  CSS rule based o the device for rendering the website.</h4>
       <ul>
-        <li>
-          <p style="line-height: 5px;"> @media (condition){</p>
-            <p style="line-height: 5px;">  /*  CSS rule applies once the conditions are met  */</p>
-            <P style="line-height: 5px;">}</P>
-         
-        </li>
-        <li>
-          @media (max-width: 600px) {
-            /* css rule for device which has a maximum width of 600 pixels */
-            body {
-              font-size: 12px;
-              color: red;
-            }
-          }
-        </li>
+        <img style="width:650px;" src="../images/media-queries.png" alt=" ilustration of media queries in css">
       </ul>
     </section>
   </main>
