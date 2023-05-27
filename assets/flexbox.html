@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>flexbox</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main><section>
+    <h1>flexbox</h1>
+    <h4>flex box, short of Flexible Box Layout Module</h4>
+    <ul>
+      <li>flexbox is a CSS layount module.</li>
+      <li>provide a flexible way to arrange and align elements within a container.</li>
+      <li>create responsive layouts that can adapt different screen size and orientation.</li>
+    </ul>
+
+    <h4> key concept of Flexbox include:</h4>
+    <ol>
+      <li>flex container: the parent element that contain flex items. by applying the <b>display:flex</b> or <b>display:inline-flex</b></li>
+      <li>flex Items: the child element within the flex container. this could horizontally or vertically arranged based on flex container's direction.</li>
+      <li>Main Axis and Cross Axis: the main axis is the primary axis along which flex items are laid out. either horizontally (row direction) or vertically (column direction)</li>
+      <li>Flex Direction: is define by the main axis. it can be set to <b>row</b> (left to right) or <b>row-reverse</b> (right to left), <b>column</b> (top to bottom) or <b>column-reverse</b> (bottom to top).</li>
+      <li>Flex Property: control the layoutn and behavour of flex items, including 'justify-conten', 'align-items', 'flex-wrap', 'align-content'.</li>
+
+    </ol>
+  </section>
+
+  <section>
+    <h1>examples
+    </h1>
+    <div class="flex-container" >
+      <div style="background-color: yellow;" class="flex-item" >div1</div>
+      <div style="background-color: lightblue;" class="flex-item">div2</div>
+      <div style="background-color: yellow;" class="flex-item">div2</div>
+    </div>
+
+    <div class="flex-container2" >
+      <div style="background-color: yellow;" class="flex-item2" >div1</div>
+      <div style="background-color: lightblue;" class="flex-item2">div2 <p>increase content</p></div>
+      <div style="background-color: yellow;" class="flex-item2">div2</div>
+    </div>
+    in th 2nd container we have changed the flex direction to vertically by the chaning the flex-direction to column. <BR></BR>
+    we have changed the padding to 20px. <br>
+    we have increase the content of div2 in flex-itm. and the flexbox has incresed too. <br> 
+    the reason we called flexible Box layout Module is because it is flexible wiht layount width and height. it just take as much as space as it need.
+
+  </section></main>
+  
+  
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Media Queries</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+  <main>
+    <section>
+      <h1>Media queries</h1>
+      <h4>Media queries create responsive designs that adapt to different devicdes and screen sizes, providing a better user experience acros the range of platfrom and devices.</h4>
+      <ul>
+        <li>
+          Media queries are a CSS feature.
+        </li>
+        <li>
+          Media queries work by specifying a condition or set of conditions in CSS, if those conditions are met, the associated syeles will be applied.
+        </li>
+        <li>
+          the condition involves the properties of device, such as screen width, height, aspect ratio (aspect ratio of a device refers to relation between width and height. for example a device with aspect raiton of 16:9; means the device width is 19units and height 9 units), device orientation (portrait and landscape orientation), resolution, or even the type of device (e.g., screen, print and speech)
+        </li>
+        <li>
+          media queries consist of <b>media type</b> and <b>media features</b>
+        </li>
+        <li>
+          <b>media type:</b> target type of devices; <b>all:</b> (all devices and media type). <b>screen:</b>(screen with and devices with visual output.) <b>print:</b> (applies when printing documents). <b>speech:</b> (applies to screen reader.)
+        </li>
+      </ul>
+      <h4>Syntax</h4>
+      <ul>
+        <li>
+          <p style="line-height: 5px;"> @media (condition){</p>
+            <p style="line-height: 5px;">  /*  CSS rule applies once the conditions are met  */</p>
+            <P style="line-height: 5px;">}</P>
+         
+        </li>
+        <li>
+          @media (max-width: 600px) {
+            /* css rule for device which has a maximum width of 600 pixels */
+            body {
+              font-size: 12px;
+              color: red;
+            }
+          }
+        </li>
+      </ul>
+    </section>
+  </main>
+ 
+
+</body>
+</html>
