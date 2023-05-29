@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pseudo Elements</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    #EXAMPLE::before {
+      content: "EXAMPLE";
+      color: red;
+      font-size: 16px;
+    }
+
+    #EXAMPLE2::after {
+      content: "EXAMPLE2";
+      color: red;
+      font-size: 16px;
+    }
+
+    li:nth-child(3):first-line {
+      color: red;
+      font-size: 16px;
+    }
+
+    li:nth-child(4):first-letter {
+      color: red;
+      font-size: 30px;
+    }
+
+    li:nth-child(5)::selection {
+      color: red;
+    }
+
+    input::placeholder{
+      color:red;
+      text-shadow: 5px, 5px, 5px, red;
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <h1>Pseudo-Elements</h1>
+    <h4>
+      Pseudo-Elements are elements that not part of actual HTML markup but can be created and manipulated ujsing css.
+      <br>
+      Pseudo-Elements are represented by double colons :: in CSS and use with conjunction with CSS Selector to target
+      specific elements.
+    </h4>
+    <ol>
+      <li ID="EXAMPLE">
+        <b>::before:</b> insert content before the content of element.
+        <img style="width: 300px;" src="../images/pseudo-element-before.png" alt=" image of css pseudo element before">
+      </li>
+      <li id="EXAMPLE2">
+        <b>::after:</b> insert content after the content of element
+        <img style="width: 300px;" src="../images/pseudo-element-after.png" alt="pseudo element css after">
+      </li>
+      <li>
+        <b id="EXAMPLE3">::first line:</b> it select and style the first line of text within an element. <br> the
+        Pseudo-Elements apply style to the first line <br> of paragraph only.
+      </li>
+      <li>
+        <b>::first-letter:</b> it select and style the first letter of a text.
+        <img style="width:300px" src="../images/pseudo-element-first-letter.png" alt="pseudo element css firt-letter">
+      </li>
+      <li>
+        <b>::selection:</b> it allow to <span>style a portion</span>  of text.
+      </li>
+      <li>
+        <b>::placeholder:</b> element allow us to style the placeholder text inside an input text field.
+       <input placeholder="write you name" type="text"> <br>
+       <img style="width:300px" src="../images/placeholder pseudo element.png" alt=" placeholder pseudo element in css">
+      </li>
+    </ol>
+  </main>
+
+</body>
+
+</html>
