@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Transitions</title>
+  <link rel="stylesheet" href="../css/style.css">
+
+  <style>
+    li:first-child:hover{
+      background-color: grey;
+      color: white;
+      transition: color 2s;
+      padding: 20px;
+      font-size: 25px;
+      transition: background-color 2s ease-in-out;
+    }
+
+    #delay:hover{
+      color: red;
+      transition-delay: 1s;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Transitions</h1>
+  </header>
+  <main>
+    <h4>
+      transition in CSS allow an smooth animate changes in property value over a specified duration. it provide a way to addi visual effects and smooth transitions between different state or style of an element. <br>
+      below some keys aspect of CSS Transitions.
+    </h4>
+    <ol>
+      <li>
+        <b>transition </b> Property: <br>
+            it specify a CSS property should be animated during a transition. <br>
+            hover on me! <br>
+
+            <img style="width: 350px;" src="../images/transition-hover.png" alt=" transition hover css property"> <br>
+      </li>
+      <li>
+        <b>duration:</b> specify the length of time that a transition should take in place, in seconds (s) or millisecons (ms).
+      </li>
+      <li>
+        <b>Timing Fucntion:</b> define the acceleration curve for the transitions. how the visual effect of the transition is going in start, middle and at end of the of the transition <br>
+        <img style="width:650px;" src="../images/timing function.png" alt=" css timing function ">
+
+        <ul>
+          <li>
+            the <b>linear</b> timing function have constant animation speed.
+          </li>
+          <li>
+            <b>ease</b> start slow, accelerate in middle, and slow down toward the end.
+          </li>
+          <li>
+            <b>ease-in</b> start slow and accelerate graudually.
+          </li>
+          <li>
+            <b>ease-out</b> start fast and decelerate smoothly.
+          </li>
+          <li>
+            <b>ease-in-out</b> start slow, accerlerate in middle, and decerlerate toward the end.
+          </li>
+          <li>
+            <b>cubic-bezier</b> allows to define a custiom accerleration curve by specifying the control point. 
+            <img src="../images/cubic-bezier.png" alt="">
+          </li>
+        </ul>
+      </li>
+      <li id="delay">
+        <b>delay:</b>the property set a delay before the transition start.
+        <img style="width:300px" src="../images/transition-delay.png" alt=" transition delay hover">
+
+      </li>
+    </ol>
+  </main>
+  
+</body>
+</html>
