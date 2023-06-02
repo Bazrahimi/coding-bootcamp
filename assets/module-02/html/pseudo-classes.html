@@ -5,77 +5,67 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Pseudo Classes</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/coding-bootcamp/assets/style.css">
+  <style>
+    #myInput:focus {
+      border: 3px solid blue;
+      outline: none;
+      background-color: yellow;
+    }
+
+    #myLink:visited {
+      color: purple;
+      text-decoration: underline;
+      margin-bottom: 20px;
+    }
+
+    li:nth-child(odd) {
+      background-color: rgb(239, 231, 231);
+    }
+
+    li:last-child {
+      background-color: lightgrey;
+    }
+  </style>
 </head>
-<style>
-  #myInput:focus {
-    border: 3px solid blue;
-    outline: none;
-    background-color: yellow;
-  }
-
-  #myLink:visited {
-    color: purple;
-    text-decoration: underline;
-    margin-bottom: 20px;
-  }
-
-  li:nth-child(odd) {
-    background-color: rgb(239, 231, 231);
-
-  }
-
-  li:last-child {
-    background-color: lightgrey;
-  }
-</style>
 <body>
   <header>
     <h1>Pseudo Classes</h1>
   </header>
   <main>
-    <h4>
-      Pseudo classes are to added to CSS to target element based on their state or position in the document tree. <br> <br>
-      pseudo-classes are preceded by colon (:) and follow the selector.
-      </h4>
-      <ol>
-        <li>
-          <b>:hover:</b> select element when the mourse cursor is hovoring over the elemen.
-        </li>
-
-        <li>
-          <b>:active:</b> it select elements when it they active. a button being click and hold down.
-        </li>
-
-        <li>
-          <b>:focus:</b> pseudo-classes class select the element that currently has a keyboard focus, usualy after it is beeing clickek or selected by the user.
-          <input type="text" id="myInput" placeholder="Enter your Name"> <br>
-          <img style="width: 300px" src="../images/pseudo-class-focus.png" alt=" image css pseudo clas focus">
-
-        </li>
-        
-        <li>
-          <b>visited:</b> it select links that have been visited. <br>
-          <a id="myLink" href="../index.html">Module-02</a> <br>
-          <img style="width: 300px;" src="../images/pseudo-class-visited.png" alt=" css pseudo class visited">
-
-        </li>
-
-        <li>
-          <b>nth-child</b> this pseudo selector is used to select element based on their postion in parant container.it take argument such as number or expression.
-          in the round brack () we want oddor any element we want we can target in that containder. <br>
-          <img style="width:300px" src="../images/pseudo-clas- nth- child.png" alt=" css pseudo class nth-child">
-
-        </li>
-
-        <li>
-          <b>:first-child:</b> and <b>:last-child:</b> the pseudo class target the first and last child elements of parent respectively. <br>
-          <img style="width:300px" src="../images/pseudo-class-last-child.png" alt="">
-        </li>
-
-
-
-      </ol>
+    <h4>Pseudo classes are added to CSS to target elements based on their state or position in the document tree.</h4>
+    <ol>
+      <li>
+        <b>:hover:</b> selects an element when the mouse cursor is hovering over it.
+      </li>
+      <li>
+        <b>:active:</b> selects elements when they are in an active state, such as a button being clicked and held down.
+      </li>
+      <li>
+        <b>:focus:</b> selects the element that currently has keyboard focus, usually after it has been clicked or selected by the user.
+        <br>
+        <input type="text" id="myInput" placeholder="Enter your Name">
+        <br>
+        <img style="width: 300px" src="../images/pseudo-class-focus.png" alt="image of CSS pseudo-class focus">
+      </li>
+      <li>
+        <b>:visited:</b> selects links that have been visited.
+        <br>
+        <a id="myLink" href="../index.html">Module-02</a>
+        <br>
+        <img style="width: 300px;" src="../images/pseudo-class-visited.png" alt="image of CSS pseudo-class visited">
+      </li>
+      <li>
+        <b>:nth-child:</b> this pseudo-selector is used to select elements based on their position in the parent container. It takes an argument such as a number or an expression enclosed in parentheses. We can target odd or any desired elements within that container.
+        <br>
+        <img style="width: 300px" src="../images/pseudo-clas- nth- child.png" alt="image of CSS pseudo-class nth-child">
+      </li>
+      <li>
+        <b>:first-child:</b> and <b>:last-child:</b> select the first and last child elements of the parent, respectively.
+        <br>
+        <img style="width: 300px" src="../images/pseudo-class-last-child.png" alt="image of CSS pseudo-class last-child">
+      </li>
+    </ol>
   </main>
 </body>
 </html>

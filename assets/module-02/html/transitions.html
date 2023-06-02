@@ -5,23 +5,21 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Transitions</title>
-  <link rel="stylesheet" href="../css/style.css">
+  <link rel="stylesheet" href="/coding-bootcamp/assets/style.css">
 
   <style>
-    li:first-child:hover{
+    li:first-child:hover {
       background-color: grey;
       color: white;
-      transition: color 2s;
+      transition: color 2s, background-color 2s ease-in-out;
       padding: 20px;
       font-size: 25px;
-      transition: background-color 2s ease-in-out;
     }
 
-    #delay:hover{
+    #delay:hover {
       color: red;
       transition-delay: 1s;
     }
-
   </style>
 </head>
 <body>
@@ -30,50 +28,48 @@
   </header>
   <main>
     <h4>
-      transition in CSS allow an smooth animate changes in property value over a specified duration. it provide a way to addi visual effects and smooth transitions between different state or style of an element. <br>
-      below some keys aspect of CSS Transitions.
+      Transitions in CSS allow for smooth animated changes in property values over a specified duration. They provide a way to add visual effects and smooth transitions between different states or styles of an element. <br>
+      Below are some key aspects of CSS Transitions.
     </h4>
     <ol>
       <li>
-        <b>transition </b> Property: <br>
-            it specify a CSS property should be animated during a transition. <br>
-            hover on me! <br>
-
-            <img style="width: 350px;" src="../images/transition-hover.png" alt=" transition hover css property"> <br>
+        <b>transition</b> Property: <br>
+        It specifies which CSS property should be animated during a transition. <br>
+        Hover on me! <br>
+        <img style="width: 350px;" src="../images/transition-hover.png" alt="transition hover css property">
       </li>
       <li>
-        <b>duration:</b> specify the length of time that a transition should take in place, in seconds (s) or millisecons (ms).
+        <b>duration:</b> Specifies the length of time that a transition should take place, in seconds (s) or milliseconds (ms).
       </li>
       <li>
-        <b>Timing Fucntion:</b> define the acceleration curve for the transitions. how the visual effect of the transition is going in start, middle and at end of the of the transition <br>
-        <img style="width:650px;" src="../images/timing function.png" alt=" css timing function ">
+        <b>Timing Function:</b> Defines the acceleration curve for the transition, determining how the visual effect of the transition behaves at the start, middle, and end. <br>
+        <img style="width: 650px;" src="../images/timing function.png" alt="css timing function">
 
         <ul>
           <li>
-            the <b>linear</b> timing function have constant animation speed.
+            The <b>linear</b> timing function has a constant animation speed.
           </li>
           <li>
-            <b>ease</b> start slow, accelerate in middle, and slow down toward the end.
+            <b>ease</b> starts slow, accelerates in the middle, and slows down toward the end.
           </li>
           <li>
-            <b>ease-in</b> start slow and accelerate graudually.
+            <b>ease-in</b> starts slow and accelerates gradually.
           </li>
           <li>
-            <b>ease-out</b> start fast and decelerate smoothly.
+            <b>ease-out</b> starts fast and decelerates smoothly.
           </li>
           <li>
-            <b>ease-in-out</b> start slow, accerlerate in middle, and decerlerate toward the end.
+            <b>ease-in-out</b> starts slow, accelerates in the middle, and decelerates toward the end.
           </li>
           <li>
-            <b>cubic-bezier</b> allows to define a custiom accerleration curve by specifying the control point. 
-            <img src="../images/cubic-bezier.png" alt="">
+            <b>cubic-bezier</b> allows you to define a custom acceleration curve by specifying the control points.
+            <img src="../images/cubic-bezier.png" alt="cubic-bezier example">
           </li>
         </ul>
       </li>
       <li id="delay">
-        <b>delay:</b>the property set a delay before the transition start.
-        <img style="width:300px" src="../images/transition-delay.png" alt=" transition delay hover">
-
+        <b>delay:</b> Sets a delay before the transition starts.
+        <img style="width: 300px;" src="../images/transition-delay.png" alt="transition delay hover">
       </li>
     </ol>
   </main>

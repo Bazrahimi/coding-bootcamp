@@ -1,113 +1,108 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Reset</title>
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body>
-    <main>
-      <h1>CSS Reset</h1>
-      <p>
-        The purpose of CSS reset is to override or neutralize the default style of CSS which cna vary between browser. by reseting the default style, developers can apply their own styles consistently <br>
-        by reseting the styles; it helps to avoid variation and inconsistencies.
-        <br>
-        Cascading Style Sheet (CSS), the term 'Cascading' refer to the process of combining and applying multiple style to an element. <br> <br>
-        the Cascading is based on three main princiles
-      </p>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Reset</title>
+  <link rel="stylesheet" href="/coding-bootcamp/assets/style.css">
+</head>
+<body>
+  <main>
+    <h1>CSS Reset</h1>
+    <p>
+      The purpose of a CSS reset is to override or neutralize the default styles of CSS, which can vary between browsers. By resetting the default styles, developers can apply their own styles consistently. <br>
+      By resetting the styles, it helps to avoid variations and inconsistencies.
+      <br>
+      Cascading Style Sheets (CSS) — the term 'cascading' refers to the process of combining and applying multiple styles to an element. <br> <br>
+      The cascading process is based on three main principles.
+    </p>
+    <ol>
+      <li>
+        <b>Cascade:</b> The cascade refers to the process of how styles are applied to elements based on various factors. 
         <ol>
           <li>
-            <b>Cascade:</b> The cascade refers to the process of how styles are applied to elements based on various factors. 
-            <ol>
-              <li>
-                <u>Style Rule and Declarations:</u> 
-                <ul>
-                  <li>a style rule has a selector and one or more Declarations.</li>
-                  <li>a selector target one or more elements.</li>
-                  <li>Declarations define the specific styles to be applied to the selected elements. each Declarations consist of a CSS <i>Property</i> and CSS <i>Value.</i></li>
-                </ul>
-              </li>
-              <li>
-                <u>Order of Style Rules:</u>
-                <ul>
-                  <li>
-                    In CSS file, style rule are written one after another.
-                  </li>
-                  <li>
-                    the case check the order of style rule, to resolve conflict.
-                  </li>
-                  <li>
-                    if multiple rule target the same element, the last rule will take precedence.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <u>Importance:</u>
-                <ul>
-                  <li>
-                    the <i>'!important'</i> Declarations can be added to style rule to give the hightest Priority. <br>
-                    <img src="../images/important.png" alt="ilustration of !important declaration in CSS">
-                  </li>
-                  <li>
-                    when a stile rule is declared <i>!important</i> it will override any conflicting styles, regardless of specificity or order.
-                  </li>
-                </ul>
-              </li>
-              <li>
-                <u>Origin of Styles:</u>
-                <ul>
-                  <li>
-                    style can come from different source: user agent stylesheet(default stylesheet from browser), author stylesheet (the developer), user stylesheet (applied on the web browser based on user preferences and setting), and inline styles.
-                  </li>
-                </ul>
-              </li>
-            </ol>
+            <u>Style Rules and Declarations:</u> 
+            <ul>
+              <li>A style rule has a selector and one or more declarations.</li>
+              <li>A selector targets one or more elements.</li>
+              <li>Declarations define the specific styles to be applied to the selected elements. Each declaration consists of a CSS <i>Property</i> and CSS <i>Value</i>.</li>
+            </ul>
+          </li>
           <li>
-            <b>Specificity:</b> the browser uses to decide which property value is to applied to the element if the same element is selected multiple time by different selectors. <br>
-            The hierarchy of specificity, from highest to lowest.
+            <u>Order of Style Rules:</u>
+            <ul>
+              <li>
+                In a CSS file, style rules are written one after another.
+              </li>
+              <li>
+                The cascade checks the order of style rules to resolve conflicts.
+              </li>
+              <li>
+                If multiple rules target the same element, the last rule will take precedence.
+              </li>
+            </ul>
           </li>
-            <ol>
+          <li>
+            <u>Importance:</u>
+            <ul>
               <li>
-                <u>Inline Style: </u> has the hightiest specificity, because they are applied directly to the element.
+                The <i>'!important'</i> declaration can be added to a style rule to give it the highest priority. <br>
+                <img src="../images/important.png" alt="illustration of the '!important' declaration in CSS">
               </li>
-
               <li>
-              <u> ID Selector:</u> it is more specific than class selector.
+                When a style rule is declared as <i>!important</i>, it will override any conflicting styles, regardless of specificity or order.
               </li>
-
-              <li>
-                <u>Class Selector:</u> class selector, <u>attribute selector</u>, <u>pseudo-class</u> has equal specificity. they target elements based on their class name. <br>
-                <img style="width:200px" src="../images/class-selector.png" alt="image of different class selector in css">
-              </li>
-
-              <li>
-                <u>Element</u> and <u>Pseudo-Element Selector</u> has lower specificity compare to class selector, it target elements by HTML element categories.
-                <br>
-                <img style="width: 200px" src="../images/element -selector.png" alt="ilustration of element selector">
-              </li>
-
-              <li>
-                <u>Universal</u> and <u>Combinator Selector</u> has the lowest specificity. <br>
-                Universal Selector target all elements by  "*". <br>
-                Combinator Selector: select elements based on their relationship to other elements. <br>
-                <i>Descendant Combinator</i> is selected by a (space). <br>
-                <i>Child Combinator</i> is selected by ">". <br>
-                <i>Adjacent Sibling Combinator</i> is selected by "+". these selector has the lowest specificity. <br>
-                <img style="width:300px" src="../images/unversal-combinator-selector.png" alt="ilustration of Universal and combinator selector"> <br>
-              </li>
-            </ol>
+            </ul>
           </li>
-
-        <li>
-          <b>Inheritance:</b> allow certain styles to be inherited by child elements from their parent elements. when a style element is applied to the parent, it will automatically applied to <u>child or nested element</u> too. this help reducing the amount CSS code required. <br>
-
-          Some commonly elements which are used to have child or nested elements in them. <br>
-          <img style="width: 650px;" src="../images/child elements.png" alt="image of some commonly elements which are used to have child or nested elements in them"> <br> <br>
-          <i>Empty Elements</i> or <i>Void Elements</i> are not able to have child element nested in them. <br>
-          <img style="width:650px" src="../images/void elements.png" alt="ilustration showing void elements are not able to have child element nested in them">
-        </li>
-      </main>
-  </body>
+          <li>
+            <u>Origin of Styles:</u>
+            <ul>
+              <li>
+                Styles can come from different sources: user agent stylesheet (default stylesheet from the browser), author stylesheet (from the developer), user stylesheet (applied to the web browser based on user preferences and settings), and inline styles.
+              </li>
+            </ul>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <b>Specificity:</b> Specificity is the criteria the browser uses to decide which property value to apply to an element if the same element is selected multiple times by different selectors. <br>
+        The hierarchy of specificity, from highest to lowest:
+        <ol>
+          <li>
+            <u>Inline Style:</u> Inline styles have the highest specificity because they are applied directly to the element.
+          </li>
+          <li>
+            <u>ID Selector:</u> ID selectors are more specific than class selectors.
+          </li>
+          <li>
+            <u>Class Selector:</u> Class selectors, <u>attribute selectors</u>, and <u>pseudo-classes</u> have equal specificity. They target elements based on their class names. <br>
+            <img style="width: 200px" src="../images/class-selector.png" alt="image of different class selectors in CSS">
+          </li>
+          <li>
+            <u>Element</u> and <u>Pseudo-Element Selectors:</u> Element and pseudo-element selectors have lower specificity compared to class selectors. They target elements by HTML element categories.
+            <br>
+            <img style="width: 200px" src="../images/element -selector.png" alt="illustration of element selector">
+          </li>
+          <li>
+            <u>Universal</u> and <u>Combinator Selectors:</u> Universal and combinator selectors have the lowest specificity. <br>
+            The universal selector targets all elements using "*". <br>
+            Combinator selectors select elements based on their relationship to other elements. <br>
+            <i>Descendant Combinator</i> is represented by a space. <br>
+            <i>Child Combinator</i> is represented by ">". <br>
+            <i>Adjacent Sibling Combinator</i> is represented by "+". These selectors have the lowest specificity. <br>
+            <img style="width: 300px" src="../images/unversal-combinator-selector.png" alt="illustration of universal and combinator selectors"> <br>
+          </li>
+        </ol>
+      </li>
+      <li>
+        <b>Inheritance:</b> Inheritance allows certain styles to be inherited by child elements from their parent elements. When a style is applied to the parent, it will automatically be applied to child or nested elements as well. This helps reduce the amount of CSS code required. <br>
+        Some common elements are used to have child or nested elements in them. <br>
+        <img style="width: 650px;" src="../images/child elements.png" alt="image of some common elements that are used to have child or nested elements in them"> <br> <br>
+        <i>Empty Elements</i> or <i>Void Elements</i> are not able to have child elements nested in them. <br>
+        <img style="width: 650px" src="../images/void elements.png" alt="illustration showing void elements are not able to have child elements nested in them">
+      </li>
+    </ol>
+  </main>
+</body>
 </html>
