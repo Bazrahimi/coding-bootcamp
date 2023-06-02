@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Script tags</title>
+<style>
+
+body {
+  line-height: 30px;
+  border: 5px solid grey;
+  max-width: 700px;
+  padding: 18px;
+  display: block;
+  
+}
+
+h1 {
+  text-align: center;
+
+
+}
+
+li+li {
+  margin-top: 1em;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.flex-item {
+  flex: 1;
+  padding: 50px;
+  
+}
+
+.flex-container2 {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+  margin-bottom: 20px;
+}
+.flex-item2 {
+  flex: 2;
+  padding: 50px;
+  
+}
+</style>
+</head>
+<body>
+<h1>Script tags in JavaScript</h1>
+<h4>In JavaScript Script tags are used to include and execute JavaScript code within HTML Documents</h4>
+<ol>
+  <li>
+    <b>Inline Script:</b> you include JavaScript code directly whithin HTML Documents; <br>
+    HTML Document: is consist of HTML element and HTML tags, which are used to strucutre and format the content. <br>
+    Structure and format of HTML consist of DOCTYPE, HTML element, Head section, Body section, html element and tags and html attribute. <br>
+    HTML element: is the ELement plus opening and closing tags of element. <br>
+    HTML Tags: are the opening and closing tags, exclude the element itself.
+
+      <img style="width: 300px;" src="../images/inline-script.png" alt="">
+  </li>
+  <li>
+    <b>External script:</b> you can reference external JavaScript file using 'src' attributes of the script tag.
+    <img src="../images/external-script.png" alt="">
+  </li>
+  <li>
+    <b>Deffered Script</b> by adding the <i>defer</i> attribute to stcript tag, you can indicate that the script should be executed after the HTML document has been parsed. <br>
+    <img style="width:300px" src="../images/defered script exampl.png" alt=" defer script"> <br>
+    In the above example which HTML document with deferred script. <br>
+    the <i>differed</i> attribute indicate taht the script should be executed after the html document is parsed. this allow the browser to continou parsing the HTML without blocking the script execution. plus, the order of script is preserved as well. <br>
+    you can place your javascript code within the <i>script.js</i> file and it will be excuted after the html docuent is parsed. <br>
+    <i>src</i> attribute is matching the file path of script.js.
+
+  </li>
+  <li>
+    <b>Async script</b> 
+  </li>
+</ol>
+<script>
+  
+</script>
+</body>
+</html>
