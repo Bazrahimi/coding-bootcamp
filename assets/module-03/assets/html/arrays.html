@@ -6,7 +6,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Arrays</title>
   <link rel="stylesheet" href="../../../style.css">
-
 </head>
 
 <body>
@@ -24,22 +23,104 @@
     </div>
   </nav>
 
-
   <h1>Arrays</h1>
+  <h2>
+    <ul>
+      <li><a href="#arrays-intro?">Arrays</a></li>
+      <li><a href="#array-build-in-methods">Array Build-in Methods</a></li>
+    </ul>
+  </h2>
   
-  <h4>
-   conditional statement allow us to controrl the flow of our <code class=""></code>
+  <h4 id="arrays-intro?">An array is able to store multiple values in a single variable.<br>
+  Arrays are able to contain any kind of data type (numbers, strings, objects, even other arrays).<br><br>
+  To declare an array, we use the array's literal syntax.<br>
+  <img src="../images/declare array.png" alt="image of syntax declaring an array">
+  </h4>
+  <ul>
+    <li>
+      <i>Array literal:</i> It is simply represented by square brackets and a comma at the end of each value or element. However, if the values are strings or text, in JavaScript strings need to be enclosed in single or double quotes.
+    </li>
+  </ul>
 
-   <script>
-    function goBack() {
-      window.history.back();
-    }
+  <h4>Here are some more examples of literal syntax in JavaScript:</h4>
+  <ol>
+    <li>
+      <u>String literal:</u> Equal sign plus single or double quotes.<br>
+      <img src="../images/string literal syntx" alt="image of string literal syntax">
+    </li>
+    <li>
+      <u>Number literal:</u> Create a variable "number" with a value of 42.<br>
+      <img style="width: 140px;" src="../images/numeric literal.png" alt="image of numeric literal">
+    </li>
+    <li>
+      <u>Boolean literal:</u> The variable "isTrue" has a Boolean value of true. We can use the variable "isTrue" in conjunction with an if statement, any function, or object.<br>
+      <img src="../images/boolean literal.png" alt="image of boolean literal">
+    </li>
+    <li>
+      <u>Object literal:</u> The object variable "person" has multiple related values such as name, age, and profession. We can add as much information as we want to the variable. For example, we can include address, telephone, height, residency, and even boolean values such as isMarried: true. "isMarried" is the property and true is the value.
+    </li>
+    <li>
+      <u>Array literal:</u> All the values are inside square brackets and separated by commas. Since colors are string values, they need to be quoted.<br>
+      <img src="../images/array literal.png" alt="image of array literal">
+    </li>
+    <li>
+      <u>Regular Expression literal:</u> It is used for pattern recognition.<br>
+      <img src="../images/console-result.png" alt="image of regular expression literal">
+    </li>
+  </ol>
 
-    function goForward() {
-      window.history.forward();
-    }
+  <h1>Back to Array</h1>
+  <img src="../images/declare-array.png" alt="">
+  <ul>
+    <li>
+      To declare an array, we use square brackets [].
+    </li>
+    <li>
+      Each element is separated by a comma.
+    </li>
+    <li>
+      Zero-based indexing is used to access individual elements.
+    </li>
+    <li>
+      If we want to access the first element of the above array, we use <b>numbers[0]</b>.<br>
+      If we console.log(numbers[0]), the result will be 1.
+    </li>
+    <li>
+      Arrays in JavaScript are dynamic. "Dynamic" refers to the ability to adapt, modify, or update in response to various conditions.
+    </li>
+  </ul>
+  <h4 id="array-build-in-methods"> <b>Some built-in methods</b> of arrays:</h4>
+  <ul>
+    <li>
+      <b>push():</b> We can use the push built-in method to add an element at the end of an array.<br>
+      <img style="width: 400px;" src="../images/array-fruits.png" alt=""><br>
+      <img src="../images/build in method pop.png" alt="image of built-in method push"><br>
+    </li>
+    <li>
+      <b>pop():</b> When we want to retrieve and remove the last element of an array.
+    </li>
+    <li>
+      <b>unshift():</b> Add one or more elements to the beginning of an array and return the new length of the array. <br>
+      <img style="width:600px" src="../images/unshift-build-in.png" alt="image of unshift biultin method">
+    </li>
+    <li>
+      <b>reverse():</b> Reverse the order of the array.
+    </li>
+    <li>
+      There are more built-in methods that can be used with arrays, such as sort(), splice(), index(), map(), and so on.
+    </li>
+  </ul>
+
+  <script>
+    let numbers = [1, 2, 3, 4, 5];
+    console.log(numbers[2]);
+
+    let fruits = ['apple', 'banana', 'orange'];
+
+    let newlength = fruits.unshift('grape', 'kiwi');
+    console.log(newlength);//output: 5
+    console.log(fruits); //output:['grape', 'kiwi, 'apple', 'banana', 'orange'];
+ 
   </script>
-   
-  <script src="../../../script.js"></script>
 </body>
 </html>
