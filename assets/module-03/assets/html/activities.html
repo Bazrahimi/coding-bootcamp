@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>activities</title>
+  <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a>
+      </div>
+      <div class="flex-item">
+        <a href="../module-03/module-03.html">JavaScript</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>weekly activities - 04</h1>
+  <h4>How can we combine values using the concatenation operator (+) to log a single message to the console?</h4>
+  What happens when you concatenate two variables in a single console log using +? Is the result what you expected? Why or why not?
+  <ul>
+    <li>
+      we can use the funtion 'console.log();' inside the round bracket to add two value by the concatenation operator '+'.
+    </li>
+    <li>
+      <b>concatenation operator "+"</b>; is used combine multip strings into a single string. <br>
+      <img style="width:500px" src="../images/concatenation-operator.png" alt="image of concatenatioion operator"> <br>
+    </li>
+    <li>
+      in above example we have combine five string into a signle string. <br>
+
+    </li>
+    <li>the outpute on console will <b>hello my dear friend John.</b> <br>
+      we have added empty string (" ") after message and another empty string before name. otherwise, JavaScript would have added all string together without any spaces in between.
+    </li>
+  </ul> 
+  <h4>
+    Primitive Data Type:
+  </h4>
+  <ul>
+    <li>
+      primitive data types are string, number, boolean, Nul and undefine;
+
+    </li>
+    <li>
+      when a value <b>undefined</b>: this means, 
+      <ol>
+        <li>
+          we have declared a varaible but have assigned any value to it yet. for exmample <i>let x;</i>
+        </li>
+        <li>
+          function without a return statement. 
+        </li>
+        <li>
+          accessing non-existent properties or indices. for example whe we create an object in a curly bracket. than try log the property of the give object. it will show undefined. because there is non. <br>
+          or similar with arrays. if we try to access value of arrays which we hav not assign any yet. it will show undefined. 
+        </li>
+      </ol>
+    </li>
+    
+    <li>
+      </li>
+      <i>Nul</i> is intentionaly and empty value.
+    </li>
+
+  </ul>
+
+ 
+  <script>
+    var personName = 'Michael';
+var pets = 3;
+var funFact = 'fun fac';
+personName = 'abdul'
+pets = 1;
+funFact = 'fun';
+
+console.log(personName);
+console.log(pets);
+console.log(funFact);
+
+let message = 'hello';
+let name = 'John';
+let greeting = message + " " + "my dear friend" + " " + name;
+console.log(greeting);
+
+
+console.log('His name is:' + personName);
+const computor = '';
+console.log(computer);
+  </script>
+</body>
+</html>
