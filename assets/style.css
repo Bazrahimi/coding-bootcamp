@@ -1,3 +1,17 @@
+.navbar {
+  background: #f2f2f2;
+  padding: 10px;
+}
+
+.navbar .flex-container {
+  display: flex;
+  justify-content:center;
+}
+
+.navbar .flex-item {
+  padding: 5px;
+  
+}
 
 body {
   line-height: 25px;
@@ -10,7 +24,7 @@ body {
 }
 
 h1 {
-  text-align: center;
+  text-align: left;
 
 
 }
@@ -24,7 +38,9 @@ li+li {
   margin-top: 1em;
 }
 
-.flex-container {
+
+
+/* .flex-container {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -47,4 +63,4 @@ li+li {
   flex: 2;
   padding: 50px;
   
-}
+} */
