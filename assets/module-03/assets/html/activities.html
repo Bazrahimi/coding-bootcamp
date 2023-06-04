@@ -65,6 +65,9 @@
         </li>
       </ol>
     </li>
+    <li>
+      <b>BigInt:</b> is another primitive data type, it was introduced lately in 2020, the name itself is combination of 'Big' "interger". it represent large numbers, where it has a limitaion dealing with standard number type.
+    </li>
     
     <li>
       </li>
@@ -84,6 +87,58 @@
     conosle.log(9 % 3); output will zero. there is not any remainder.
 
   </ul>
+  <h4>
+    activity 08:
+  </h4>
+  <h4>What is the difference between =, ==, and ===?</h4>
+  <ul>
+    <li>
+     "=" is an <b>assignment operator</b>  , this will assign the value from the right to the variable to the left.
+    </li>
+    <li>
+      "=="is called <b>Equality Operator</b>. the operator is used for loose equality comparison. it compare to values after type coercion (changing to type of values.) <br>
+      <img style="width: 500px;" src="../images/equality-operator.png" alt="example of equality operator with different data type"> <br>
+      equality operator check if two values are by negleting the type of data. on the above example equality operator shows that string of 5 is equal to a Number 5. in fact, they are differnt type of data, so, it can be equal to each other.
+    </li>
+    <li>
+      "===" is called <b>Strict Equality Operator</b> and it is ued to strict equality comparison whithout type coercion. 
+    </li>
+  </ul>
+  <h4>
+    What is NaN? What happens when you use typeof to evaluate NaN? Is the answer what you expected? Why or why not?
+  </h4>
+  <ul>
+    <li>
+      <b>NaN</b> stand for <i>Not a Number</i>; we get NaN if we associate any other type data with Numbers. however, javacript still consider NaN as number, it is s special number.
+    </li>
+  </ul>
+  <h4>activity-12</h4>
+  <ul>
+    <li>
+      to store multiple valuse inside variable we can create an array.
+    </li>
+    <li>
+      to create inside a variable we use square bracket. <br>
+      var names = ["Andre", "Karl", "Rashida", "Olivia"]; <br>
+      on the above example var create the variable names and the square bracket we can put much as values we want.
+    </li>
+    
+    <li>
+      arrays are zero index. the values start from zero. <br>
+      to access the frist value of array> <br>
+      we can use console.log(array's name[inside the square bracket we put index value] );
+
+    </li>
+    <li>
+      we can replace the value by by puting index inside the square bracket. <br>
+      for example <i>name[2] = 'fatima';</i>
+    </li>
+    <li>
+      we can use array <b>lenghth</b> to determine how many elements an array has. <br>
+      <i>console.log(name.lenghth);</i>
+    </li>
+  </ul>
+  <h4>activity-13</h4>
 
 
  
@@ -106,8 +161,20 @@ console.log(greeting);
 
 
 console.log('His name is:' + personName);
-const computor = '';
-console.log(computer);
+
+console.log(5 == 5);        // true
+console.log(5 == "5");      // true (loose equality with type coercion)
+console.log(true == 1);     // true (true is coerced to 1)
+console.log(false == 0);    // true (false is coerced to 0)
+console.log(null == undefined);    // true (null and undefined are loosely equal)
+
+console.log("Hello" == "Hello");        // true (both strings have the same value)
+console.log("10" == 10);                // true (loose equality with type coercion)
+console.log("10" == [10]);              // true (loose equality with type coercion)
+console.log("true" == true);            // true (loose equality with type coercion)
+console.log("false" == false);          // true (loose equality with type coercion)
+
+
   </script>
 </body>
 </html>
