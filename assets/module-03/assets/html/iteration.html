@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Iteration</title>
+  <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../module-03.html">JavaScript</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Iteration</h1>
+  <h4>ineration refer to the act of repeating. <br>
+  in JavaScript, iteration referes to the process of repeated executing a block of code unit certain condition met</h4>
+
+  <h4>there are many way to perform ineration in javascript</h4>
+  <ol>
+    <li>
+      <b>for</b> loop: it has a initializaiton statement, a codition, update statement, and code to be exectuted. <br>
+      <img src="../images/for-loop.png" alt="image of for loop"> <br>
+      initializaiotn <b>i</b> start from zero, condition (i should not be equal or more than 5), post icrement operator ++1 (it means on every loop the initializaiotn is getting add by 1), the code will run inside the curly bracket as long condition is not end. <br>
+      <i>i++</i> is short for <i>i = i + 1</i> or <i>i += 1</i>. 
+    </li>
+    <li>
+      <b>while</b> loop: the code will be running as long as condition is not end. <br>
+      <img src="../images/while-loop.png" alt="image of while loop"> <br>
+      while loop is shorter way to for loop. they both do the same job.
+    </li>
+    <li>
+      <b>do-while</b> loop: similar to the while loop, the code will be running as long the condition is true. <br>
+      <img src="../images/do-while-loop.png" alt="image of do while syntax"> <br>
+      however, in do-while loop, condition is getting check everytime after each iteration. 
+    </li>
+    <li>
+      <b>for...in</b> loop: the for...in loop repeat over the properties of an object. and return or retreive keys of the object and allow to perform action on each property. <br>
+
+      <img src="../images/for-in-loop.png" alt="image of for in loop syntax">
+      <br>
+
+    </li>
+  </ol>
+  <li>
+    <b>for...of</b> loop: the for...of loop is ued to repeat over iterable object such array, string or other dada structure. 
+  </li>
+  <script>
+    for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+// let i = 0;
+// while (i < 5) {
+//   console.log(i);
+//   i++;
+// }
+
+let i = 0;
+do { 
+  console.log(i);
+  i++;
+} while (i < 5);
+
+const person = {
+  name: 'John',
+  age: 25,
+  city: 'melbourne'
+
+};
+for (let key in person) {
+  console.log(key + ' ; ' + person[key]);
+}
+
+const numbers = [1, 2, 3, 4, 5];
+
+for (let num of numbers) {
+  console.log(num);
+}
+
+
+  </script>
+  
+</body>
+</html>

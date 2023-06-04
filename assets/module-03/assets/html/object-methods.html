@@ -18,7 +18,7 @@
         <a href="../../../module-02/module-02.html">CSS</a>
       </div>
       <div class="flex-item">
-        <a href="../module-03/module-03.html">JavaScript</a>
+        <a href="../../module-03.html">JavaScript</a>
       </div>
     </div>
   </nav>
@@ -29,7 +29,9 @@
   </h4>
   <ul>
     <li>
-      obeject methods are with the object key-value syntax. where the key is the method name and values are the funciton of object.
+      obeject methods are with the object key-value syntax. where the key is the method name and values are the funciton of object. <br>
+      <img style="width: 400px;" src="../images/object-method-alert.png" alt=" image of object contain multiple function inside"> <br>
+      in above there is 5  functions with object of calculator.where keys are the method name and values are funtion. we are able to put as many function we need inside an object.
     </li>
     <li>
 
@@ -55,12 +57,20 @@
 
     divide: function(){
       return this.operand1 / this.operand2;
+    },
+    showAlert: function(){
+      alert('This is a funtion of object Method');
     }
   };
 
   calculator.operand1 = 5;
   calculator.operand2 = 3;
   console.log(calculator.add());
+  console.log(calculator.subtract());
+  console.log(calculator.multiply());
+  console.log(calculator.divide());
+  calculator.showAlert();
+
 
 
   </script>
