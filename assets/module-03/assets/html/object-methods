@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Objects Methods</title>
+  <link rel="stylesheet" href="../../../style.css">
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a>
+      </div>
+      <div class="flex-item">
+        <a href="../module-03/module-03.html">JavaScript</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Object Methods</h1>
+  <h4>
+    Object Methods are functions which are the propety of object. this methods can be called to perform a specific action.
+  </h4>
+  <ul>
+    <li>
+      obeject methods are with the object key-value syntax. where the key is the method name and values are the funciton of object.
+    </li>
+    <li>
+
+    </li>
+  </ul>
+  <script>
+    let calculator = {
+      operand1: 0,
+      operand2: 0,
+
+    
+    add: function(){
+      return this.operand1 + this.operand2;
+    },
+
+    subtract: function (){
+      return this.operand1 - this.operand2;
+    },
+
+    multiply: function(){
+      return this.operand1 * this.operand2;
+    },
+
+    divide: function(){
+      return this.operand1 / this.operand2;
+    }
+  };
+
+  calculator.operand1 = 5;
+  calculator.operand2 = 3;
+  console.log(calculator.add());
+
+
+  </script>
+  
+  
+</body>
+</html>
