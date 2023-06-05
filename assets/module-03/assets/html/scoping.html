@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scoping</title>
+    <link rel="stylesheet" href="../../../style.css">
+  </head>
+
+  <body>
+    <nav class="navbar">
+      <div class="flex-container">
+        <div class="flex-item">
+          <a href="../../../Module-01/Module-01.html">HTML</a>
+        </div>
+        <div class="flex-item">
+          <a href="../../../module-02/module-02.html">CSS</a>
+        </div>
+        <div class="flex-item">
+          <a href="../../module-03.html">JavaScript</a>
+        </div>
+      </div>
+    </nav>
+
+    <h1>Scoping</h1>
+    <h4>refer to visibility and accessibility of variable, functions, object in a particular part of code.</h4>
+    <ol>
+      <li>
+        <b>Global Scope</b>: varaible declared outside of function or block have global scope. they are are accessible any from you code. <br>
+        <img style="width: 400px;" src="../images/global Variables.png" alt=" image of sytax showing global variable"> <br>
+        in above examle globalVariable has global scope. we can the assess this particular variable from anywhere in code.
+
+      </li>
+      <li>
+        <b>Local Scope</b>; variable which created or declared inside funciton has local scope. local scope mean that variable access only within the function or this particular curly bracket. <br>
+        <img style="width:300px;" src="../images/local-scope.png" alt="image showing local scope"><br>
+        in above example we created the localVariable inside the function. local variable only in the function, it does exist outside of the function. if try to access console. it will give error message <u>localVariable is not defined</u>
+      </li>
+    </ol>
+
+    <script>
+      function foo(){
+        let localVariable = 20;
+        console.log(localVariable);
+      }
+      foo();
+      console.log(localVariable);
+
+    </script>
+      
+    
+  </body>
+</html>
