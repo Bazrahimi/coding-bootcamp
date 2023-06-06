@@ -151,14 +151,51 @@
         <img class="width: 250px" src="../images/access-element-using-index.png" alt="image of access element using index">
       </li>
       <li>
-        <b>What’s a while loop?</b>
+        <b>What is a while loop?</b>
       </li>
       <li>
         while loop the code will run as log at the condition is true( meaning initializaiton i is less the array.length). it is similar to for loop but short.
       </li>
       <img src="../images/while-loop.png" alt="image of while loop">
     </ul>
-  
+
+    <h4>activity-16</h4>
+    <ul>
+      <li>
+        <b>function argument</b> refer to the valuse that passes to the function when it invoked or called . 
+
+      </li>
+      <li>
+        argument allow us to provide input to a function. 
+      </li>
+      <li>
+        when we are defining a function, we can specify parameters that act a placeholder for the argument which is passed through the calling function users. <br>
+        <img class="300px;" src="../images/function-argument.png" alt="image showing function argument"> <br>
+      </li>
+      <li>
+        in the above example: 10 and 12 are place into the function arugment which passed to the function when it get invoked. 
+      </li>
+      <li>What is <b>hoisting?</b> <br>
+        variable and functions are moved to top of scope. this we can us variable and invoke function before they are even declared.
+        <ol>
+          <li>
+            <i>Variable hoisting:</i> <br>
+            <img style="width:300px;" src="../images/variable-hoisting.png" alt="image showing variable hoisting"> <br>
+            in above example variable is accessed before it is even declared, it does not show an error. it just just show undefine, meaning no value is assigned to the variable.
+
+          </li>
+          <li>
+            <b>Function Hoisting:</b> the function is called before the declaration and it is working jsut fine. <br>
+            <img style="width:300px;" src="../images/function-hoisting.png" alt="image of showing function hoisting">
+          </li>
+        </ol>
+    
+
+      </li>
+    </ul>
+
+    <h4>activity-19</h4>
+
 
 
 
@@ -194,6 +231,13 @@ console.log("10" == 10);                // true (loose equality with type coerci
 console.log("10" == [10]);              // true (loose equality with type coercion)
 console.log("true" == true);            // true (loose equality with type coercion)
 console.log("false" == false);          // true (loose equality with type coercion)
+
+function addNumbers(num1, num2){
+const sum = num1 + num2;
+console.log(sum);
+}
+
+addNumbers(10,12); //Output: 22
 
 
   </script>
