@@ -47,6 +47,74 @@
       if we acess the person's property by a dot notation or bracket notation. the function will be running.
     </li>
   </ul>
+  <h2>Nested object</h2>
+  <ul>
+    <li>
+      Inside an object property we can have nested or child object as well. <br>
+      <img style="width:500px" src="../images/nested-object.png" alt="image show showing nested object"> <br>
+      In above example a new object in curly bracket is nested in person.address. <br>
+      we can access them by the <i>property Path</i> or  <i>Property chain</i>.
+    </li>
+    <li>
+      we can nest a function too inside an object. br
+      <img style="width:500px" src="../images/nested-object.png" alt="image showing a nested object"> <br>
+      in above example a function is nested inside the property of greet. 
+    </li>
+    <li>
+      <i>note:</i> <u>this</u> is a keyword that refer the context in which a function is is executed.
+    </li>
+    <li>
+      we can have array inside object too. <br>
+      <img style="width:500px;" src="../images/array-child-object.png" alt="image of array in side object"> <br>
+    </li>
+  </ul>
+  <h2>
+    JSON (JavaScript Object Notation)
+  </h2>
+  <ul>
+    <li>
+      JSON <i>syntax</i> is similar to Objects. <br>
+      <img style="width:250px;" src="../images/json-syntax.png" alt=" JSON syntax">
+    </li>
+    <li>
+      the difference between JSON object. you can see in the above example that all JSON properties and values must be double quoted. and object are not need to have quotes.
+    </li>
+    <li>
+      JSON can not support functions.
+    </li>
+    <li>
+      JSON is with less feature compare to object.
+    </li>
+    <li>
+      JSON syntax is more universal, while the object syntax is only read by javascrpt. that we are using JSON syntax when we send data between two computers.
+    </li>
+    <li>
+      <b>Build-in JSON Object</b> JSON is a Build-in Object.
+    </li>
+    <li>
+      we can covert object into JSON-sytax by <b>JSON.stringify</b> Method. <br>
+      <img src="../images/json-stringify.png" alt="image show method json.stringigy">
+    </li>
+    <li>
+      Output: jSON-syntax <br>
+      <img style="width:400px" src="../images/json-syntax-example.png" alt=" image showing JSON syntax example">
+    
+    </li>
+    <li>
+      JSON support arays. however, it is not supportingg. that why we  dont have the above function in it.
+    </li>
+  </ul>
+<h2>converting JSON to Object</h2>
+<ul>
+  <li>
+    to convert JSON to object, we use the Build-in Method <b>JSON.parse()</b> <br>
+    <img style="width:300px" src="../images/object-example.png" alt=" object example">
+  </li>
+  <li>
+    in above example <b>JSON.parse</b> method is used to parse <b>jsonString</b> into JavaScript object.
+  </li>
+</ul>
+
   
 
   
