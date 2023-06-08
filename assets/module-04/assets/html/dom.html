@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Document Object Model</h1>
+  <h4>
+    DOM is a programming interface that represents the structure of an HTML or XML document as a tree-like structure. It provides a way to access, modify, and manipulate the elements and content of a document dynamically. <br>
+    When the page is loaded into the browser, the browser creates a representation of the page called the DOM. This allows JavaScript to interact with the document's elements, attributes, and text content. <br>
+    JavaScript can access and manipulate the DOM using various methods and properties provided by the 'document' object or other DOM elements. Some common properties include.
+  </h4>
+  <h2>Document Objects</h2>
+  <ol>
+    <li>
+      Accessing elements by ID: <br>
+      <img class="width:350px;" src="../images/document-by-id.png" alt="accessing document object by id">
+    </li>
+  </ol>
+  <script>
+    // JavaScript
+    var navbar = document.querySelector('.navbar'); // Select the navbar element
+
+    // Copy the navbar content
+    var navbarContent = navbar.innerHTML;
+
+    // Output the navbar content to the console
+    console.log(navbarContent);
+  </script>
+</body>
+</html>
