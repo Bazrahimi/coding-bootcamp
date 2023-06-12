@@ -1,0 +1,78 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Keyboard Events</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Keyboard Events</h1>
+  <h4>
+   keyboared event allow the user interaction with the keyboard. <br>
+   some commonly used keyboard events. <br>
+   <input id="myInput" type="text" placeholder="Key Enter in here"> <br>
+   <p class="output"></p>
+  </h4>
+  <ol>
+    <li>
+      <b>keydown</b> when a key on a keyboard is pressed down.
+    </li>
+    <li>
+      <b>keyup</b>; the event will occure when a selected key of the keyboard is released.
+    </li>
+    <li>
+      <b>keypress</b>: This event occurs when a key that produces a character value is pressed down
+    </li>
+  </ol>
+
+  <script>
+    const input = document.querySelector('#myInput');
+    let outputElement = document.querySelector('.output');
+
+    input.addEventListener('keydown', function(event) {
+        const inputValue = event.target.value;
+        outputElement.innerHTML = ` You have pressed Enter. ${inputValue}`;
+      }
+    );
+
+   
+
+  </script>
+
+
+
+
+
+ 
+</body>
+</html>

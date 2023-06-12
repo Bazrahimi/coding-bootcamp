@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appending Elements</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Appending Elements</h1>
+  <h4>
+    In JavaScript there are several ways to append element into another element. 
+
+  </h4>
+  <ol>
+    <li>
+      <b>appendChild</b>: append a node as the last child.
+
+      <ul>
+        <li>
+          <i>nodes</i> are the building block of DOM Tree Structure.
+        </li>
+        <li>
+          <i>Dom Tree Structure</i> is a hierarchical representation of elements in HTML.
+        </li>
+        <li>
+          <b>appendChild</b> methods is used to the below image to.
+        </li>
+        <li class="last-li" >
+
+        </li>
+        <li>
+          <b>insertBefore()</b> inset node before a specific reference node.
+        </li>
+        <li>
+          <b>insertAdjacentHTML</b> and <b>insertAdjacentElement</b> are similar to each other. <br>we can use for positions. <br>
+          <ol>
+            <li>
+              <b>beforebegin</b> is before the element.
+            </li>
+            <li>
+              <b>afterbegin</b> inside the element, at the beginning
+            </li>
+            <li>
+              <b>beforeend</b> inside the element, at the end.
+            
+            </li>
+            <li>
+              <b>afterend</b> after the element.
+            </li>
+          </ol>
+        </li>
+      </ul>
+
+    </li>
+  </ol>
+ <script>
+  //get the reference
+  const fourthLi = document.querySelector('.last-li');
+  console.log(fourthLi);
+  
+  //create element and put tagname in brackets.
+  const imgElement = document.createElement('img');
+  imgElement.src = '../images/3.png';
+  imgElement.style.width = '500px';
+  console.log(imgElement);
+  fourthLi.appendChild(imgElement);
+
+ 
+  
+
+
+ </script>
+</body>
+</html>

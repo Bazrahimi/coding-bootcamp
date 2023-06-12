@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Preventing Default Browser Behavior</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Preventing default browser behavior</h1>
+  <h4>
+    intercept and canceling the default action that browser perform in repsonse to an specific event. we are able to override and modify and implement owr own custom behavior. 
+    <br>
+    the example below show how we can prevent the default behavour of link when clicked 
+  </h4>
+  <ul>
+    <li>
+      <a href="https://www.google.com/" class="googleLink">google.com</a>
+    </li>
+    <li>
+      <img style="width: 600px;" src="../images/preventing default browser behavior.png" alt="preventing default browser behavior"> <br>
+      In above example we have prevented the default behavour of browser to browse the given link which for google.com. <br>
+      instead we are redirecting the user to open youtube.com.
+    </li>
+  </ul>
+
+  <script>
+  //   let googleLink = document.querySelector('.googlelink');
+  //   console.log(googleLink);
+  //   googleLink = addEventListener('click', function(event) {
+  //     event.preventDefault();
+  //     //redirect to Youtube.com
+  //     window.open('https://www.youtube.com', '_blank');
+  //   })
+  // </script>
+
+ 
+</body>
+</html>

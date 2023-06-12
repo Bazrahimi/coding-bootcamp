@@ -1,0 +1,115 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Creating DOM elements</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+    #container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex start;
+    }
+    #container >div {
+      margin-bottom: 10px;
+    }
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Creating DOM Elements</h1>
+  <h4>
+    There are several way to creat DOM elements in Javascript
+  </h4>
+  <ol>
+    <li>
+      <b>document.createElement()</b> Method: This method will allow us to create new html elements by specifing the tag names a a parameter. <br>
+
+      <!-- div elment in HTML  -->
+      <div id = container></div> <br>
+      In above example, both image and the button has been created by DOM using <i>document.createElment() </i>method. the <i>button tag and img tags</i> are used a parameter.
+    </li>
+
+    <li>
+    <b>innerHTML</b> propery: 
+    
+    </li>
+    <li>
+      <b>innerHTML</b> propery: In the above LI. innerHTML properties is used to change the text into above image using DOM.
+    </li>
+    <li>
+      <b>insertAdjacentElement()</b> methods. this method allow us to isert element at specific position relative to the elements. <br>
+      the following image has been insert by DOM by choosing the position of <b>afterend</b>, this has positive the image after the element. <br>
+      <b>beforebegin</b> position befoere the element. <br>
+      <b>afterbegin</b> position inside the element, at the begining. <br>
+      <b>beforeend</b> inside element, at the end.
+    </li>
+  </ol>
+  
+  <script>
+    //get the refence to the container div
+    const container = document.getElementById('container');
+    
+    //create an new button element using DOM
+    const testBtn = document.createElement('button');
+    testBtn.textContent = 'Click Me';
+    
+    //append the button element to the parent (container div)
+    container.appendChild(testBtn);
+
+    const imgElement = document.createElement('img');
+    imgElement.src = '../images/document.createElement.png';
+    imgElement.alt = 'image of JavaScript document.createElements DOM ';
+    imgElement.style.width = '500px';
+
+    container.appendChild(imgElement);
+
+    // getthe reference to the second Li 
+    const li2 = document.getElementsByTagName('li')[1];
+    //create a new paragraph element 
+    const testP = document.createElement('p');
+    testP.textContent = 'This is test paragraph';
+    //append the paragraph to li2
+    li2.appendChild(testP);
+
+    const imgElement2 = document.createElement('img');
+    li2.innerHTML = '<img src="../images/1.png" style=width:500px;">';
+    li2.style.width = '500px';
+
+    const imgElement3 = document.createElement('img');
+    imgElement3.src = '../images/2.png';
+    imgElement3.style.width='500px';
+    const li4 = document.getElementsByTagName('li')[3];
+    li4.insertAdjacentElement('afterend', imgElement3);
+
+
+    
+
+  </script>
+</body>
+</html>

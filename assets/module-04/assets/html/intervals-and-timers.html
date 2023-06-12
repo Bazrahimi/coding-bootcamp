@@ -1,0 +1,109 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Intervals and Timer</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+  #startBtn {
+  transition: transform .5s;
+  position: relative;
+}
+
+.move-right {
+  transform: translateX(400px);
+  opacity: .5;
+  background-color: yellow;
+}
+
+.move-left {
+  transform: translateX(0);
+}
+
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Intervals and timers</h1>
+  <h4>
+    are mechanism used to execute cdoe at a specific time intervals or after certian delay.they are useful for implementing time-based actions, animations, periodic update and more. <br>
+    two commonly used functions.
+
+  </h4>
+  <ol>
+    <li>
+      <b>setInterval()</b>: repeatedly run a given code snippet. <br>
+      it take two parameters; the function and the interval duration in milliseconds. <br> <button id="startBtn">start-click</button> <br>
+      <img style="width: 500px;" src="../images/setInterval.png" alt="image of setInterval syntax"> <br>
+      <button id="stopBtn" >stop-click</button>
+    </li>
+    <li>
+      <b>clearInterval()</b>: it return and ID which can be used to stop the interval.
+    </li>
+    <li>
+      <b>setTimeout</b> will be excuted once, after specific delay.
+    </li>
+  </ol>
+  
+<script>
+  const startBtn = document.getElementById('startBtn');
+  const stopBtn = document.getElementById('stopBtn');
+  let isMovingRight = true;
+  let intervalId;
+  let timeoutId;
+
+  startBtn.addEventListener('click', function() {
+    timeoutId = setTimeout(function() {
+      intervalId = setInterval(function() {
+        if (isMovingRight) {
+          startBtn.classList.add('move-right');
+          startBtn.classList.remove('move-left');
+        } else {
+          startBtn.classList.add('move-left');
+          startBtn.classList.remove('move-right');
+        }
+        isMovingRight = !isMovingRight;
+      }, 1000); // execute every 1 second (1000ms)
+    }, 2000); // start the animation after a 2-second delay (2000ms)
+  });
+
+  stopBtn.addEventListener('click', function() {
+    clearTimeout(timeoutId);
+    clearInterval(intervalId);
+    startBtn.classList.remove('move-right');
+    startBtn.classList.remove('move-left');
+  });
+
+
+</script>
+
+ 
+</body>
+</html>
