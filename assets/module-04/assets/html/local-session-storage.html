@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Local and Session Storage</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Local and Session Storage</h1>
+  <h4>
+    localstorage adn session storage are web storage in the browser. They are part of Web Storage API. 
+  </h4>
+  <ol>
+    <li>
+      <b><b>localStorage:</b></b>
+      <ul>
+        <li>
+          store data in browswer even the browser closed or reopened.
+        </li>
+        <li>
+          the Data will remain available in localStorage until it is not clear by the users.
+        </li>
+        <li>
+          localStorage only supported string values. 
+        </li>
+        <li>
+          To store data in localStorage, we much use <b>localStorage.setItem(key, value)</b> method. <br>to retrieve the values we must use <b>localstorage.getItem(key)</b>. we use the same key that we had put for SetItem to retrieve the the getItem.
+        </li>
+      </ul>
+      <li>
+        <b>sessionStorage</b>
+        <ul>
+          <li>
+            it is similar to localStorage, but the store data is in session specific.
+          </li>
+          <li>
+            the data will be only available during the session.
+          </li>
+          <li>
+            similar to localStorage, Session storage also store data as key value pair and the value is required to be string only. 
+          </li>
+
+          <li>
+            to stora data we use <b>sessionStorage.setItem(key, Value)</b> method. <br>
+            to retrieve the value we need associate the key and use <b>sessionStorage.getItem(key)</b> method.
+          </li>
+        </ul>
+      </li>
+
+    </li>
+  </ol>
+  
+
+ 
+</body>
+</html>

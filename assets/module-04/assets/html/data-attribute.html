@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Data Attributes</title>
+  <link rel="stylesheet" href="../../../style.css">
+
+  <style>
+
+
+
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="flex-container">
+      <div>
+        <a href="../../../../index.html">Home</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../Module-01/Module-01.html">HTML</a>
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-02/module-02.html">CSS</a> 
+      </div>
+      <div class="flex-item">
+        <a href="../../../module-03/module-03.html">JavaScript</a>
+      </div>
+      <div>
+        <a href="../../module-04.html">Web APIs</a>
+      </div>
+    </div>
+  </nav>
+
+  <h1>Data Attributes</h1>
+  <h4>
+    allow us to store extra information or metadata within the HTML element. they are prefixed with <i>Data</i> and can be added to any HTML element as attributes. <br>
+    data attributes are not affecting the element default behavior or rendering. 
+  
+
+  </h4>
+  <ul>
+    <li>
+      <img style="width: 300px;" src="../images/data-attribute-html.png" alt="html data attributes">
+    </li>
+    <li>
+    <img style="width: 400px;" src="../images/data-attributes.png" alt="">
+    </li>
+  </ul>
+  
+ <script>
+const button = document.getElementById("myButton");
+const category = button.dataset.category;
+const action = button.dataset.action;
+const label = button.dataset.label;
+
+console.log(category); // Output: "sports"
+console.log(action);   // Output: "click"
+console.log(label);    // Output: "example"
+
+ </script>
+</body>
+</html>

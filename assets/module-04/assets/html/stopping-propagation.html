@@ -38,11 +38,28 @@
 
   <h1>stopping Propagation</h1>
   <h4>
-    intercept and canceling the default action that browser perform in repsonse to an specific event. we are able to override and modify and implement owr own custom behavior. 
+    refer to a process where event listener are passed from element to its parent elements in DOM tree. during this process, we can cantrol element passing event listener to parent element by using Stopping Propagation mechanisim. 
     <br>
-    the example below show how we can prevent the default behavour of link when clicked 
+    there are two methods which are used to control event propagation in JavaScript.
   </h4>
+  <ol>
+    <li>
+      event <b>.stopPropagation()</b>. the methods is used top the propagation of the current event. it prevent bubbling up to the parent element.
+      <br>
+      <img style="width: 400px;" src="../images/event-stoppropation.png" alt="event stopPropagation syntax">
+    </li>
+    <li>
+      event <b>stopImmediatePropagation</b>. the method is stopping the current propagation and also any other event listener on same element. it completely halt the event flow.
+    </li>
+  </ol>
  
+  <script>
+  document.getElementById("myButton").addEventListener("click", function(event) {
+    event.stopPropagation(); // Stops the event from propagating further
+    // Event handling code...
+  });
+
+  </script>
 
  
 </body>
